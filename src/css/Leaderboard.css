@@ -1,0 +1,43 @@
+.Leaderboard {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.Leaderboard h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Leaderboard table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.Leaderboard th,
+.Leaderboard td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.Leaderboard thead {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.Leaderboard tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.Leaderboard tbody tr:hover {
+  background-color: #eaeaea;
+}
+
+.Leaderboard img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 5px;
+}
