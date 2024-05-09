@@ -1,5 +1,9 @@
 # Employee Polls Project
 
+## Quick Start 🚀
+
+Visit the live app here: https://emloyeepools.netlify.app
+
 This is the code for the final assessment project for Udacity's React & Redux course.
 
 This project was bootstraped with Create React App and Redux.
