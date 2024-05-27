@@ -43,7 +43,7 @@ const Dashboard = () => {
       </div>
       <div>
         <h2 className="status text-2xl font-semibold mb-4">{isToggle ? "Unanswered questions" : "Answered questions"}</h2>
-        <ul role="list" className="lista grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <ul className="lista grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {isToggle
             ? unanswered_questions.map((question) => (
                 <li key={question.id} className="col-span-1 flex flex-col divide-y divide-gray-200 rounded-lg bg-white text-center shadow">
