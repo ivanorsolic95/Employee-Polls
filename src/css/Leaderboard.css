@@ -1,43 +1,161 @@
-.Leaderboard {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  font-family: Arial, sans-serif;
+.main-container {
+  padding-left: 1rem;
+  padding-right: 1rem; 
 }
 
-.Leaderboard h1 {
-  text-align: center;
-  margin-bottom: 20px;
+@media (min-width: 640px) {
+  .main-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .wrapping-container {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem; 
+  }
+  .inside-wrapping-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; 
+  }
+  #name-cell {
+    padding-left: 0;
+  }
+  #data-cell-user {
+    padding-left: 0; 
+  }  
 }
 
-.Leaderboard table {
-  width: 100%;
-  border-collapse: collapse;
+@media (min-width: 1024px) { 
+  .main-container {
+    padding-left: 2rem;
+    padding-right: 2rem; 
+  }
+  .wrapping-container {
+    margin-left: -2rem;
+    margin-right: -2rem; 
+  }
+  .inside-wrapping-container {
+    padding-left: 2rem;
+    padding-right: 2rem; 
+  }
 }
 
-.Leaderboard th,
-.Leaderboard td {
-  padding: 10px;
-  text-align: center;
-  border: 1px solid #ccc;
+.table-container {
+  display: flow-root; 
+  margin-top: 2rem; 
 }
 
-.Leaderboard thead {
-  background-color: #f5f5f5;
-  font-weight: bold;
+.wrapping-container {
+  overflow-x: auto; 
+  margin-top: -0.5rem;
+  margin-bottom: -0.5rem; 
+  margin-left: -1rem;
+  margin-right: -1rem; 
 }
 
-.Leaderboard tbody tr:nth-child(odd) {
-  background-color: #f9f9f9;
+.inside-wrapping-container {
+  display: inline-block; 
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; 
+  min-width: 100%; 
+  vertical-align: middle; 
 }
 
-.Leaderboard tbody tr:hover {
-  background-color: #eaeaea;
+#table {
+  border-top-width: 1px;
+  border: 1px solid; 
+  border-color: #D1D5DB; 
+  min-width: 100%;
 }
 
-.Leaderboard img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-top: 5px;
+#name-cell {
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem; 
+  padding-right: 0.75rem; 
+  padding-left: 1rem; 
+  font-size: 0.875rem;
+  line-height: 1.25rem; 
+  font-weight: 600;  
+  color: #111827;
+  border-bottom: solid thin #D1D5DB; 
+}
+
+.cell {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem; 
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem; 
+  font-size: 0.875rem;
+  line-height: 1.25rem; 
+  font-weight: 600; 
+  text-align: left; 
+  color: #111827;
+  border-bottom: solid thin #D1D5DB; 
+ }
+
+#table-body {
+  border-top-width: 1px; 
+  border-color: #E5E7EB; 
+  background-color: #ffffff; 
+}
+
+#data-cell-user {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem; 
+  padding-right: 0.75rem; 
+  padding-left: 1rem; 
+  font-size: 0.875rem;
+  line-height: 1.25rem; 
+  white-space: nowrap;
+  border-bottom: thin solid #D1D5DB; 
+}
+
+#user-div {
+  display: flex; 
+  align-items: center; 
+}
+
+#image-wrapper {
+  width: 2.75rem; 
+  height: 2.75rem;
+  flex-shrink: 0; 
+}
+
+#user-avatar {
+  border-radius: 9999px; 
+  width: 2.75rem; 
+  height: 2.75rem; 
+}
+
+#username-wrapper {
+  margin-left: 1rem; 
+}
+
+#username-text {
+  font-weight: 500; 
+  color: #111827; 
+}
+
+.data-cell {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem; 
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem; 
+  font-size: 0.875rem;
+  line-height: 1.25rem; 
+  color: #6B7280; 
+  white-space: nowrap;
+  border-bottom: thin solid #D1D5DB;
+  border-left: 1px solid #D1D5DB;
+}
+
+#answers {
+  color: #111827; 
+}
+
+#questions {
+  color: #111827; 
+}
+
+#table-body tr:last-child td {
+  border-bottom: none; 
 }
