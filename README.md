@@ -1,5 +1,9 @@
 # Employee Polls Project
 
+## Quick Start 🚀
+
+Visit the live app here: https://emloyeepools.netlify.app
+
 This is the code for the final assessment project for Udacity's React & Redux course.
 
 This project was bootstraped with Create React App and Redux.
@@ -101,7 +105,7 @@ _Parameters_: Object that contains the following properties: `authedUser`, `qid`
 ## Installation
 
 1. Clone the repository to your local machine.
-2. Nqavigate to the application's root directory.
+2. Navigate to the application's root directory.
 3. Run 'npm install' to install all dependencies.
 
 ## Launching
