@@ -11,31 +11,50 @@ const Leaderboard = () => {
   );
 
   return (
-    <div className="Leaderboard">
-      <h1>Leaderboard</h1>
-
-      <table>
-        <thead>
-          <tr>
-            <th>User</th>
-            <th>Answered</th>
-            <th>Created</th>
-          </tr>
-        </thead>
-        <tbody>
-          {users.map((user) => (
-            <tr key={user.id}>
-              <td>
-                <span>{user.name}</span>
-                <br />
-                <img src={user.avatarURL} alt="User" />
-              </td>
-              <td>{Object.keys(user.answers).length}</td>
-              <td>{user.questions.length}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div className="main-container">
+      <div className="table-container">
+        <div className="wrapping-container">
+          <div className="inside-wrapping-container">
+            <table id="table">
+              <thead>
+                <tr>
+                  <th scope="col" id="name-cell">
+                    Name
+                  </th>
+                  <th scope="col" className="cell">
+                    Answered
+                  </th>
+                  <th className="cell">
+                    Created
+                  </th>
+                </tr>
+              </thead>
+              <tbody id="table-body">
+                {users.map((user => (
+                  <tr key={user.id}>
+                    <td id="data-cell-user">
+                      <div id="user-div">
+                        <div id="image-wrapper">
+                          <img id="user-avatar" src={user.avatarURL} alt="User"/>
+                        </div>
+                        <div id="username-wrapper">
+                          <div id="username-text">{user.name}</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="data-cell">
+                      <div id="answers">{Object.keys(user.answers).length}</div>
+                    </td>
+                    <td className="data-cell">
+                      <div id="questions">{user.questions.length}</div>
+                    </td>
+                  </tr>
+                )))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

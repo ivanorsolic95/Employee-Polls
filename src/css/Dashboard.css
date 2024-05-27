@@ -1,9 +1,18 @@
-.dashboard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.lista {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
+.status {
+  margin-left: 1rem;
+}
+
+.dashboard {
+  margin-top: 1rem;
+}
+
+/*
 .dashboard h1 {
   font-size: 36px;
   margin-bottom: 20px;
@@ -40,3 +49,4 @@
     width: 48%;
   }
 }
+*/

@@ -77,42 +77,42 @@ const Poll = () => {
   };
 
   return (
-    <div className="poll-container">
-      <h1>Poll by {author.id}</h1>
+      <div className="poll-container">
+        <h1 id="author-heading">Poll by: {author.id}</h1>
 
-      <div>
-        <img src={author.avatarURL} alt="Profile" />
-      </div>
+        <div>
+          <img src={author.avatarURL} alt="Profile" />
+        </div>
 
-      <div>
-        <h2>Would you rather?</h2>
-      </div>
+        <div>
+          <h2>Would you rather?</h2>
+        </div>
 
-      <div>
-        <button onClick={handleOptionOne} disabled={hasVoted}>
-          <div>
-            <p>{question.optionOne.text}</p>
+        <div id="answers-container">
+          <button onClick={handleOptionOne} disabled={hasVoted}>
+            <div>
+              <p>{question.optionOne.text}</p>
+              {!hasVoted && <p>Click</p>}
+              {hasVoted && (
+                <p className={selectedOption === "optionOne" ? "selected" : ""}>
+                  Votes: {question.optionOne.votes.length} (
+                  {calculatePercentage("optionOne", question)})
+                </p>
+              )}
+            </div>
+          </button>
+
+          <button onClick={handleOptionTwo} disabled={hasVoted}>
+            <p>{question.optionTwo.text}</p>
             {!hasVoted && <p>Click</p>}
             {hasVoted && (
-              <p className={selectedOption === "optionOne" ? "selected" : ""}>
-                Votes: {question.optionOne.votes.length} (
-                {calculatePercentage("optionOne", question)})
+              <p className={selectedOption === "optionTwo" ? "selected" : ""}>
+                Votes: {question.optionTwo.votes.length} (
+                {calculatePercentage("optionTwo", question)})
               </p>
             )}
-          </div>
-        </button>
-
-        <button onClick={handleOptionTwo} disabled={hasVoted}>
-          <p>{question.optionTwo.text}</p>
-          {!hasVoted && <p>Click</p>}
-          {hasVoted && (
-            <p className={selectedOption === "optionTwo" ? "selected" : ""}>
-              Votes: {question.optionTwo.votes.length} (
-              {calculatePercentage("optionTwo", question)})
-            </p>
-          )}
-        </button>
-      </div>
+          </button>
+        </div>
     </div>
   );
 };

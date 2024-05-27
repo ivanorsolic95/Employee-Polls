@@ -6,7 +6,6 @@ import "../css/NewQuestion.css";
 
 const NewQuestion = () => {
   const dispatch = useDispatch();
-
   const [optionOne, setOptionOne] = useState("");
   const [optionTwo, setOptionTwo] = useState("");
   const navigate = useNavigate();
@@ -28,18 +27,30 @@ const NewQuestion = () => {
   };
 
   return (
-    <div>
+    <div className="new-question-container">
       <h1>Would you rather?</h1>
-      <form onSubmit={handleNewQuestion}>
-        <div>
+      <form onSubmit={handleNewQuestion} className="new-question-form">
+        <div className="input-group">
           <label>Option One</label>
-          <input value={optionOne} onChange={handleOptionOne} type="text" />
+          <input
+            value={optionOne}
+            onChange={handleOptionOne}
+            type="text"
+            placeholder="Enter Option One"
+          />
         </div>
-        <div>
+        <div className="input-group">
           <label>Option Two</label>
-          <input value={optionTwo} onChange={handleOptionTwo} type="text" />
+          <input
+            value={optionTwo}
+            onChange={handleOptionTwo}
+            type="text"
+            placeholder="Enter Option Two"
+          />
         </div>
-        <button type="submit">Create New Question</button>
+        <button type="submit" className="submit-button">
+          Create New Question
+        </button>
       </form>
     </div>
   );
