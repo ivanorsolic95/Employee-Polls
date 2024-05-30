@@ -47,8 +47,10 @@ let users = {
     avatarURL: zenobiaImage,
     answers: {
       xj352vofupe1dqz9emx13r: "optionOne",
+      "8xf0y6ziyjabvozdd253nd": "optionTwo",
+      "6ni6ok3ym7mf1p33lnez": "optionOne"
     },
-    questions: [],
+    questions: ["zn452vofufe1dqs9emf13r"],
   },
 };
 
@@ -62,7 +64,7 @@ let questions = {
       text: "Build our new application with Javascript",
     },
     optionTwo: {
-      votes: [],
+      votes: ["zoshikanlu"],
       text: "Build our new application with Typescript",
     },
   },
@@ -71,7 +73,7 @@ let questions = {
     author: "mtsamis",
     timestamp: 1468479767190,
     optionOne: {
-      votes: [],
+      votes: ["zoshikanlu"],
       text: "hire more frontend developers",
     },
     optionTwo: {
@@ -131,6 +133,19 @@ let questions = {
       text: "deploy to production once every month",
     },
   },
+  "zn452vofufe1dqs9emf13r": {
+    id: "zn452vofufe1dqs9emf13r",
+    author: "zoshikanlu",
+    timestamp: 1493579767190,
+    optionOne: {
+      votes: [],
+      text: "learn React"
+    },
+    optionTwo: {
+      votes: [],
+      text: "learn Angular"
+    }
+  }
 };
 
 function generateUID() {
