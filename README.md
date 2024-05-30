@@ -2,7 +2,16 @@
 
 ## Quick Start 🚀
 
-Visit the live app here: https://emloyeepools.netlify.app
+To use the app, you're required to login. Use one of these "accounts" from the database to login:
+
+| Username      | Password    | 
+| ---------     | ------      | 
+| sarahedo      | password123 | 
+| tylermcginnis | abc321      |
+| mtsamis       | xyz123      | 
+| zoshikanlu    | pass246     | 
+
+***Visit the live app here***: https://emloyeepools.netlify.app
 
 This is the code for the final assessment project for Udacity's React & Redux course.
 
